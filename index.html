@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bill 3 by Billonios34</title>
+<style>
+  body {
+    margin: 0; padding: 12px;
+    background: #e5e5e5; color: #000;
+    font: 12px/1.5 Verdana, Tahoma, Arial, Helvetica, sans-serif;
+  }
+  a { color: #006699; }
+  a:hover { color: #dd6900; text-decoration: none; }
+
+  #page { max-width: 860px; margin: 0 auto; background: #fff; border: 2px solid #006699; padding: 8px; }
+
+  #banner { padding: 10px 12px 12px; background: linear-gradient(#dbe7ef, #ffffff); border: 1px solid #98aab1; margin-bottom: 8px; }
+  #banner h1 { margin: 0; font: bold 30px "Trebuchet MS", Verdana, sans-serif; color: #006699; }
+  #banner p { margin: 2px 0 0; color: #444; }
+
+  .bar { background: #dee3e7; border: 1px solid #98aab1; padding: 5px 6px; margin-bottom: 6px; }
+  .bar b { margin-right: 4px; }
+  .navbtn {
+    font: bold 11px Verdana, Tahoma, Arial, sans-serif; color: #000; cursor: pointer;
+    background: #f1f3f5;
+    border: 2px outset #fff; border-color: #fff #7c8b95 #7c8b95 #fff;
+    padding: 3px 9px; margin: 2px 2px 2px 0;
+  }
+  .navbtn:hover { background: #fff; }
+  .navbtn:active, .navbtn.on { border-color: #7c8b95 #fff #fff #7c8b95; background: #cdd5db; }
+
+  .crumbs { margin: 8px 0; }
+
+  table.forumline { width: 100%; border-collapse: separate; border-spacing: 1px; background: #98aab1; border: 2px solid #98aab1; margin-bottom: 10px; }
+  table.forumline th, table.forumline td { padding: 7px 9px; vertical-align: top; text-align: left; }
+  th.cat { background: linear-gradient(#0a7ab8, #006699); color: #ffa34f; font-size: 12px; }
+  th.col { background: #c7d3da; color: #000; font-size: 11px; }
+  td.r1 { background: #efefef; }
+  td.r2 { background: #dee3e7; }
+  td.dl { width: 120px; white-space: nowrap; }
+  .fname { font-weight: bold; font-size: 13px; }
+  .fold { display: inline-block; width: 11px; height: 9px; background: #f2c14e; border: 1px solid #a07a14; margin-right: 6px; }
+
+  td.author { width: 150px; background: #dee3e7; }
+  td.author b { font-size: 13px; }
+  td.author small { display: block; color: #444; }
+  td.post { background: #efefef; }
+  td.post h3 { margin: 0 0 6px; font-size: 13px; color: #006699; border-bottom: 1px solid #98aab1; padding-bottom: 3px; }
+  td.post ul { margin: 0 0 12px; padding-left: 20px; }
+  td.post p { margin: 0 0 12px; }
+
+  .warn { background: #ffffcc; border: 1px solid #c8b84a; padding: 6px 10px; margin: 0 0 12px; font-weight: bold; }
+  .dlbtn {
+    display: inline-block; text-decoration: none; color: #000; font-weight: bold;
+    background: #f1f3f5; border: 2px outset #fff; border-color: #fff #7c8b95 #7c8b95 #fff; padding: 4px 12px;
+  }
+  .dlbtn:hover { background: #fff; color: #000; }
+  .dlbtn.off { color: #777; background: #e3e3e3; pointer-events: none; }
+
+  #foot { text-align: center; font-size: 11px; color: #444; margin-top: 8px; padding-top: 6px; border-top: 1px solid #98aab1; }
+  [hidden] { display: none !important; }
+
+  @media (max-width: 600px) {
+    table.post, table.post tbody, table.post tr, table.post td { display: block; width: auto !important; }
+    table.forumline td.dl { white-space: normal; width: auto; }
+  }
+</style>
+</head>
+<body>
+<div id="page">
+
+  <div id="banner">
+    <h1>Bill 3 by Billonios34</h1>
+    <p>All of my projects, in one place.</p>
+  </div>
+
+  <div class="bar" id="mainbar">
+    <b>Menu:</b>
+    <button class="navbtn" data-go="home">Home</button>
+    <button class="navbtn" data-go="about">About Me</button>
+    <button class="navbtn" data-go="repo">Repository</button>
+  </div>
+  <div class="bar" id="projbar">
+    <b>Projects:</b>
+  </div>
+
+  <div class="crumbs" id="crumbs"></div>
+
+  <!-- HOME -->
+  <div id="home">
+    <table class="forumline"><tr><th class="cat">Welcome</th></tr>
+      <tr><td class="r1">
+        <p style="margin:0 0 8px"><b>Welcome to the Bill 3 website.</b></p>
+        <p style="margin:0">Start by navigating with the buttons.</p>
+      </td></tr>
+    </table>
+    <div id="forumindex"></div>
+  </div>
+
+  <!-- ABOUT ME -->
+  <div id="about" hidden>
+    <table class="forumline post">
+      <tr><th class="cat" colspan="2">About Me</th></tr>
+      <tr>
+        <td class="author"><b>Billonios34</b><small>Developer</small><small>One person. Not a company.</small></td>
+        <td class="post">
+          <h3>About me and my applications</h3>
+          <p>I am one person, not a company.</p>
+          <ul>
+            <li>All of my applications are <b>open source</b>.</li>
+            <li>They have <b>no warranty</b>.</li>
+            <li>They have <b>no support</b>.</li>
+            <li>Every single application is <b>vibe coded</b>.</li>
+          </ul>
+          <p class="warn">Use them at your own risk. If one breaks your computer, too bad. That is not my responsibility.</p>
+          <p>Thank you, thank you.</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- REPOSITORY -->
+  <div id="repo" hidden>
+    <table class="forumline post">
+      <tr><th class="cat" colspan="2">Repository</th></tr>
+      <tr>
+        <td class="author"><b>Billonios34</b><small>Developer</small></td>
+        <td class="post">
+          <h3>My repository of all my applications</h3>
+          <p>Every application I have made is in my repository on GitHub.</p>
+          <p><a class="dlbtn" href="https://github.com/Billonios34/Bill3.github.io" target="_blank" rel="noopener">Open the repository</a></p>
+          <p>Direct link: <a href="https://github.com/Billonios34/Bill3.github.io" target="_blank" rel="noopener">https://github.com/Billonios34/Bill3.github.io</a></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- PROJECT PAGES get built here -->
+  <div id="projectpages"></div>
+
+  <div id="foot">
+    Bill 3 by Billonios34 &nbsp;|&nbsp; Open source &nbsp;|&nbsp; No warranty &nbsp;|&nbsp; No support &nbsp;|&nbsp; Use at your own risk
+  </div>
+</div>
+
+<script>
+  // ============ EDIT HERE ============
+  // Paste each download link between the quotes in "link".
+  // Leave "" and the page shows "Link coming soon".
+  var PROJECTS = [
+    { id: "exe", cat: "Tools", name: "To EXE Converter",
+      desc: "Converts your files into a Windows .exe.",
+      about: ["Converts your files into a Windows .exe."],
+      link: "" },
+    { id: "client", cat: "Games and Minecraft", name: "Bill3 Client",
+      desc: "A Minecraft client made for offline players.",
+      about: ["Made for offline players.", "Offline mode.", "Mod menu that opens with Left Shift."],
+      link: "" },
+    { id: "utility", cat: "Tools", name: "Bill3 Utility",
+      desc: "A handy utility from Bill 3.",
+      about: ["A handy utility from Bill 3."],
+      link: "" },
+    { id: "license", cat: "Tools", name: "Bill3 License Tool",
+      desc: "Checks how Windows and Office are activated.",
+      about: ["Checks how Windows is activated and how Office is activated.",
+              "Many options, split into named tabs.",
+              "A STATE tab that shows the result in big letters, with an explanation.",
+              "ADV LOG option: shows everything the app does, plus even more Windows and Office states.",
+              "An exe creator is included in the zip."],
+      link: "" },
+    { id: "zombie", cat: "Games and Minecraft", name: "Zombie Zone",
+      desc: "A 3D zombie shooter made in Java.",
+      about: ["3D zombie shooter written in Java.",
+              "WASD to move, mouse click to shoot, unlimited ammo.",
+              "Weapons: minigun, shotgun and sniper.",
+              "Version 2 is in the works: chests with a flamethrower and medkits, graphics levels (LOW, MEDIUM, HIGH) and a 6-slot hotbar."],
+      link: "" },
+    { id: "repair", cat: "Tools", name: "Windows PC Repair Kit",
+      desc: "A toolkit for fixing common Windows PC problems.",
+      about: ["A toolkit for fixing common Windows PC problems."],
+      link: "" }
+  ];
+  // ===================================
+
+  var $ = function (id) { return document.getElementById(id); };
+  var pages = ["home", "about", "repo"];
+  var titles = { home: "Home", about: "About Me", repo: "Repository" };
+
+  function dlHtml(p) {
+    return p.link
+      ? '<a class="dlbtn" href="' + p.link + '" target="_blank" rel="noopener">Download</a>'
+      : '<a class="dlbtn off">Link coming soon</a>';
+  }
+
+  PROJECTS.forEach(function (p) {
+    var b = document.createElement("button");
+    b.className = "navbtn"; b.dataset.go = p.id; b.textContent = p.name;
+    $("projbar").appendChild(b);
+    pages.push(p.id); titles[p.id] = p.name;
+  });
+
+  var cats = [];
+  PROJECTS.forEach(function (p) { if (cats.indexOf(p.cat) < 0) cats.push(p.cat); });
+  var idx = '';
+  cats.forEach(function (c) {
+    idx += '<table class="forumline"><tr><th class="cat" colspan="2">' + c + '</th></tr>' +
+           '<tr><th class="col">Project</th><th class="col">Download</th></tr>';
+    var n = 0;
+    PROJECTS.forEach(function (p) {
+      if (p.cat !== c) return;
+      var cls = (n++ % 2) ? "r2" : "r1";
+      idx += '<tr><td class="' + cls + '"><span class="fold"></span>' +
+             '<a class="fname" href="#' + p.id + '">' + p.name + '</a><br>' + p.desc + '</td>' +
+             '<td class="' + cls + ' dl">' + dlHtml(p) + '</td></tr>';
+    });
+    idx += '</table>';
+  });
+  $("forumindex").innerHTML = idx;
+
+  var out = '';
+  PROJECTS.forEach(function (p) {
+    var li = p.about.map(function (t) { return '<li>' + t + '</li>'; }).join('');
+    out += '<div id="' + p.id + '" hidden>' +
+      '<table class="forumline post"><tr><th class="cat" colspan="2">' + p.name + '</th></tr>' +
+      '<tr><td class="author"><b>Billonios34</b><small>Developer</small><small>' + p.cat + '</small></td>' +
+      '<td class="post"><h3>' + p.name + '</h3>' +
+      '<p>' + p.desc + '</p><ul>' + li + '</ul>' +
+      '<p>' + dlHtml(p) + '</p>' +
+      '<p class="warn">Open source. No warranty. No support. Use at your own risk.</p>' +
+      '<p><a href="#home">Back to the forum index</a></p>' +
+      '</td></tr></table></div>';
+  });
+  $("projectpages").innerHTML = out;
+
+  function show(id) {
+    if (pages.indexOf(id) < 0) id = "home";
+    pages.forEach(function (n) { $(n).hidden = (n !== id); });
+    document.querySelectorAll(".navbtn").forEach(function (b) {
+      b.classList.toggle("on", b.dataset.go === id);
+    });
+    $("crumbs").innerHTML = '<a href="#home">Bill 3 Forum Index</a>' +
+      (id === "home" ? '' : ' &raquo; ' + titles[id]);
+    document.title = (id === "home" ? "" : titles[id] + " - ") + "Bill 3 by Billonios34";
+    window.scrollTo(0, 0);
+  }
+  document.querySelectorAll(".navbtn").forEach(function (b) {
+    b.addEventListener("click", function () { location.hash = b.dataset.go; });
+  });
+  window.addEventListener("hashchange", function () { show(location.hash.slice(1)); });
+  show(location.hash.slice(1));
+</script>
+</body>
+</html>
